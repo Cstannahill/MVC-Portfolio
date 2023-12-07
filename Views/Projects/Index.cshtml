@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Projects";
+}
+@model List<ProjectsModel>
+<h1 class="text-center">Previous Work</h1>
+
+  
+    
+    <div class="row d-flex flex-row justify-content-around my-3">
+        @foreach (var project in Model)
+        {
+            <div class="col-5 flex-column over-row my-4 text-center">
+                <a href=@project.Link
+                   key=@project.ImageSrc
+                   class="w-100 p-1"
+                   target="_blank"
+                   rel="noreferrer">
+                    <img alt="gallery" src="@project.ImageSrc" class="proj-img" />
+                    <div class="overlay">
+                        <h2 class="text-sm title-font text-light font-medium mb-1 my-4">
+                            @project.SubTitle
+                        </h2>
+                        <h1 class="title-font text-lg font-medium text-light mb-3 my-4 text-success">
+                            @project.Title
+                        </h1>
+                        <p class="leading-relaxed text-light">
+                            @project.Description
+                        </p>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>

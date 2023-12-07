@@ -1,0 +1,25 @@
+
+body {
+  background-color: #282c34 !important;
+  color: whitesmoke !important;
+}
+
+
+
+.site-nav-text {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.brand-logo {
+  height: 5vh;
+  width: 5vh;
+}

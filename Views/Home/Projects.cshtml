@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Projects";
+}
+@model List<ProjectsModel>
+<h1>Previous Work</h1>
+
+<ul>
+    @if (Model != null)
+    {
+        foreach (var project in Model)
+        {
+            <li>
+                <h2>@project.Title</h2>
+                <p>@project.Description</p>
+                <!-- Display other project properties as needed -->
+            </li>
+        } 
+    }
+    else
+    {
+        Console.WriteLine($"Projects is {Model}");
+        <li>Damn</li>
+    }
+
+</ul>

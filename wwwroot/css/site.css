@@ -1,0 +1,48 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+.list-group-item-bg:hover {
+    box-shadow: 0px 1.5px 1.5px 1.4px aliceblue;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 1%;
+
+}
+
+nav {
+    color: aliceblue;
+}
+
+body {
+/*    margin-bottom: 60px;*/
+    background-color: #282c34 !important;
+    color: whitesmoke !important;
+}
+.list-group-item-bg {
+    background-color: #282c34 !important;
+    outline: 1px solid aliceblue;
+}
+
+.check-badge-icon {
+    height: 4vh;
+    width: 4vw;
+}
+

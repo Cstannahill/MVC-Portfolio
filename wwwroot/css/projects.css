@@ -1,0 +1,45 @@
+.proj-img {
+  height: auto;
+  width: 98%;
+}
+
+.over-row {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #2e2e30;
+  padding-left: 0px;
+  padding-right: 0px;
+  border: 2px solid silver;
+  border-radius: 2%;
+}
+
+.over-row:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.site-link {
+  color: #61dafb;
+}

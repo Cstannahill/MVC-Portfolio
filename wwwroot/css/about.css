@@ -1,0 +1,11 @@
+.about-text {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+@media (min-width: 765px) {
+  .about-text {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
